@@ -20,8 +20,8 @@ const answers = [
     ,'Outlook not so good.'
     ,'Very doubtful.'];
 
-const btn = document.getElementById('submit');
-const responseDiv = document.getElementById('response');
+const button = document.getElementById('submit');
+const responseElement = document.getElementById('response');
 
 function getRandomIndexOfArray() {
     return Math.floor(Math.random() * answers.length);
@@ -31,6 +31,6 @@ function getElementFromArray(){
     return answers[getRandomIndexOfArray()];
 }
 
-btn.addEventListener("click", () => {
-    responseDiv.innerHTML = getElementFromArray();
+button.addEventListener("click", () => {
+    responseElement.innerHTML = getElementFromArray();
 });
