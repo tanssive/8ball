@@ -34,13 +34,3 @@ function getElementFromArray(){
 btn.addEventListener("click", () => {
     responseDiv.innerHTML = getElementFromArray();
 });
-
-
-
-
-
-
-
-
-
-
